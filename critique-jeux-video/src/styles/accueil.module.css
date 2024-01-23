@@ -1,0 +1,16 @@
+
+.h1{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 73px;
+}
+.background {
+    background-image: url(../../public/img/background_connexion.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-attachment: fixed; /* Ajoutez cette ligne pour fixer l'arrière-plan */
+}
+

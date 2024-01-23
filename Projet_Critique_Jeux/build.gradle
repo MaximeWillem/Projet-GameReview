@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group = 'be.heh'
+version = '1.0-SNAPSHOT'
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.mockito:mockito-core:3.12.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+
+
+    // Ajout de la dépendance pour PostgreSQL JDBC
+    implementation 'org.postgresql:postgresql:42.2.23'
+
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+
+    // Remplacement de la dépendance MySQL par la dépendance PostgreSQL
+    // runtimeOnly 'com.mysql:mysql-connector-java'
+    // runtimeOnly 'org.postgresql:postgresql'
+}
+
+test {
+    useJUnitPlatform()
+}

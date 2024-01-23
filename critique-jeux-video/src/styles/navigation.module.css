@@ -1,0 +1,77 @@
+/* navigation.module.css */
+
+/* Reset styles */
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Page container styling */
+  .page {
+    margin: 20px 80px;
+  }
+  
+  /* Navigation bar styling */
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  /* Navigation tabs styling */
+  .onglets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    color: #fff;
+  }
+  
+  /* Styles for specific tab (e.g., Home) */
+  .accueil {
+    color: #fff;
+    list-style: none;
+    margin-top: 20%;
+  }
+  .accueiladmin {
+    color: #fff;
+    list-style: none;
+    margin-top: 3.5%;
+  }
+  
+  /* Login and Register buttons styling */
+  .buttons .login {
+    background-color: inherit;
+    margin-right: 10px;
+    color: #8f8f8f;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-top: 10px;
+  }
+  .btn{
+    list-style: none;
+
+  }
+  
+  .buttons .register {
+    background-color: #f54266;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
